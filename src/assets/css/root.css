@@ -9,6 +9,7 @@
     --primary: #A74934 ;
     --primaryLight: #ffd675;
     --secondary: #001f3f;
+    --tertiary: #03354F;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
@@ -90,7 +91,7 @@
     content: "";
     opacity: 1;
     display: block;
-    background-color: #000;
+    background-color: var(--tertiary);
     height: 100%;
     width: 0;
     transition: width 0.3s;

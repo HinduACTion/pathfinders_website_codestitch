@@ -93,7 +93,7 @@
     padding: 0;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     /* 16px - 20px */
     gap: clamp(1rem, 2vw, 1.25rem);
   }
@@ -136,7 +136,7 @@
     transition: transform 0.5s;
   }
   #hero-1946 .cs-h3 {
-    font-size: 1.25rem;
+    font-size: 3.125rem;
     line-height: 1.5em;
     text-align: inherit;
     margin: 0;
@@ -194,7 +194,7 @@
     align-items: flex-start;
   }
   #hero-1946 .cs-flex {
-    width: 50%;
+    width: 40%;
     max-width: 39.375rem;
   }
 }
