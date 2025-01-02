@@ -64,13 +64,19 @@
                                 {% set activeClass = "" %}
                                 {% for child in entry.children %}
                                     {% if child.url == page.url %}
-                                        {% set activeClass = "cs-active" %}
+                                        <!-- {% set activeClass = "cs-active" %} -->
                                     {% endif %}
                                 {% endfor %}
 
                                 {# Render the <button> with the active class, dropdown icon and child links #}
-                                <span 
+                                <!-- <span 
                                     class="cs-li-link  {{ activeClass }}"
+                                    aria-expanded="false"
+                                    aria-controls="dropdown-{{ entry.key }}"
+                                    aria-label="dropdown-{{ entry.key }}"
+                                > -->
+                                <span 
+                                    class="cs-li-link"
                                     aria-expanded="false"
                                     aria-controls="dropdown-{{ entry.key }}"
                                     aria-label="dropdown-{{ entry.key }}"
@@ -123,9 +129,14 @@
                                 </ul> -->
                             {% else %}
                                 {# Normal pages are rendered as <a> tags, in the normal way you'd expect #}
-                                <a
+                                <!-- <a
                                     href="{{ entry.url }}"
                                     class="cs-li-link {% if entry.url == page.url %}cs-active{% endif %}"
+                                    {% if entry.url == page.url %}aria-current="page"{% endif %}
+                                > -->
+                                <a
+                                    href="{{ entry.url }}"
+                                    class="cs-li-link"
                                     {% if entry.url == page.url %}aria-current="page"{% endif %}
                                 >
                                     {{ entry.key }}
@@ -136,7 +147,7 @@
                 </ul>
             </div>
         </nav>
-        <a href="/contact" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <a href="https://www.hindu-action.org/donate" class="cs-button-solid cs-nav-button">Donate</a>
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
         <!-- <button
             id="dark-mode-toggle"
