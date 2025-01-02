@@ -69,7 +69,26 @@
                                 {% endfor %}
 
                                 {# Render the <button> with the active class, dropdown icon and child links #}
-                                <button
+                                <span 
+                                    class="cs-li-link  {{ activeClass }}"
+                                    aria-expanded="false"
+                                    aria-controls="dropdown-{{ entry.key }}"
+                                    aria-label="dropdown-{{ entry.key }}"
+                                >
+                                    {{ entry.key }}
+                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                                <ul 
+                                    class="cs-drop-ul" 
+                                    id="dropdown-{{ entry.key }}"
+                                >
+                                    {% for child in entry.children %}
+                                        <li class="cs-drop-li">
+                                            <a href="{{ child.url }}" class="cs-li-link cs-drop-link">{{ child.key }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                                <!-- <button
                                     class="cs-li-link cs-dropdown-button {{ activeClass }}"
                                     aria-expanded="false"
                                     aria-controls="dropdown-{{ entry.key }}"
@@ -101,7 +120,7 @@
                                             >
                                         </li>
                                     {% endfor %}
-                                </ul>
+                                </ul> -->
                             {% else %}
                                 {# Normal pages are rendered as <a> tags, in the normal way you'd expect #}
                                 <a
@@ -119,7 +138,7 @@
         </nav>
         <a href="/contact" class="cs-button-solid cs-nav-button">Contact Us</a>
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <button
+        <!-- <button
             id="dark-mode-toggle"
             aria-label="dark mode toggle"
             tabindex="3"
@@ -144,6 +163,6 @@
                 width="15"
                 height="15"
             />
-        </button>
+        </button> -->
     </div>
 </header>
