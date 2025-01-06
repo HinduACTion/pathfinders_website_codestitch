@@ -713,8 +713,9 @@
                 left: 0;
                 height: 100%;
                 width: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
+            
         }
 
         .cs-content {
@@ -950,6 +951,14 @@
     #RPsbsr-1587, #RPsbsa-1587 {
         .cs-picture {
             order: 2;
+        }
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    #RPsbsa-1587 {
+        .cs-item {
+            grid-column: span 12;
         }
     }
 }
