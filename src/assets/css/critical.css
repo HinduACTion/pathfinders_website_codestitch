@@ -286,6 +286,9 @@
     color: var(--primary);
     text-align: center;
   }
+  #hero .cs-special-header {
+    color: var(--specialHeaderColor);
+  }
   #hero .cs-title {
     width: 100%;
     color: var(--bodyTextColorWhite);

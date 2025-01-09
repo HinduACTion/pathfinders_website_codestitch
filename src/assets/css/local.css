@@ -717,6 +717,9 @@
   #RPsbs-1587, #RPsbsa-1587 {
     background-color: var(--altBackground);
   }
+  #RPsbsa-1587 .cs-item-text {
+    font-size: 1rem;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {

@@ -341,6 +341,10 @@
             text-align: center;
         }
 
+        .cs-special-header {
+            color: var(--specialHeaderColor);
+        }
+
         .cs-title {
             width: 100%;
             color: var(--bodyTextColorWhite);
