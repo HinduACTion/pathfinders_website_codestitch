@@ -218,7 +218,8 @@ body {
                 /* this is what creates the grow affect on hover */
                 transform: scaleX(0);
                 display: block;
-                background: #000;
+                // background: #000;
+                background: var(--tertiary);
                 transition: transform 0.3s;
                 transform-origin: left;
             }
@@ -227,6 +228,63 @@ body {
                 &:before {
                     transform: scaleX(1);
                 }
+            }
+        }
+        
+        .cs-button-transparent-header {
+            z-index: 1;
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            // border: 1px solid var(--bodyTextColorWhite);
+            border: 1px solid var(--primary);
+            margin: 0 calc(8 / 16 * 1rem);
+            background-color: transparent;
+            /* 46px - 56px */
+            height: clamp(2.875em, 5.5vw, 3.5em);
+            width: calc(120 / 16 * 1rem);
+            box-sizing: border-box;
+            padding: 0;
+            text-decoration: none;
+            font-size: calc(16 / 16 * 1rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875em, 5.5vw, 3.5em);
+            font-weight: 700;
+            // color: #fff;
+            color: var(--primary);
+
+            .cs-img {
+                display: block;
+                margin-right: calc(12 / 16 * 1rem);
+            }
+
+            &:before {
+                z-index: -1;
+                position: absolute;
+                /* so it sits on top of the border */
+                top: -1px;
+                bottom: -1px;
+                left: -1px;
+                right: -1px;
+                content: "";
+                opacity: 1;
+                /* this is what creates the grow affect on hover */
+                transform: scaleX(0);
+                display: block;
+                // background: #000;
+                background: var(--tertiary);
+                transition: transform 0.3s;
+                transform-origin: left;
+            }
+
+            &:hover {
+                &:before {
+                    transform: scaleX(1);
+                }
+
+                color: var(--bodyTextColorWhite);
+
             }
         }
 
@@ -782,6 +840,10 @@ body {
         }
 
         .cs-button-solid {
+            display: none;
+        }
+    
+        .cs-button-transparent-header {
             display: none;
         }
     }
