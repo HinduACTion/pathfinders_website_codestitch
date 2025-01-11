@@ -532,12 +532,12 @@
 }
 
 /*-- -------------------------- -->
-<---          Reviews           -->
+<---          testimonials           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #reviews {
+    #testimonials {
         padding: var(--sectionPadding);
         /* Centers the button */
         text-align: center;
@@ -641,7 +641,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #reviews {
+    #testimonials {
         .cs-card-group {
             display: flex;
             justify-content: space-between;
@@ -659,7 +659,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #reviews {
+        #testimonials {
             .cs-title,
             .cs-text,
             .cs-item-p,
@@ -684,7 +684,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #RPsbs-1587, #RPsbsr-1587, #RPsbsa-1587 {
+    #eligibility, #RPsbsr-1587, #about {
         padding: var(--sectionPadding);
         position: relative;
         z-index: 1;
@@ -897,7 +897,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #RPsbs-1587, #RPsbsr-1587, #RPsbsa-1587 {
+    #eligibility, #RPsbsr-1587, #about {
         .cs-container {
             max-width: calc(1280/16 * 1rem);
             flex-direction: row;
@@ -925,7 +925,7 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #RPsbs-1587, #RPsbsr-1587, #RPsbsa-1587 {
+    #eligibility, #RPsbsr-1587, #about {
         .cs-content {
             padding: calc(84/16 * 1rem) 0;
             align-self: center;
@@ -939,13 +939,13 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #RPsbs-1587, #RPsbsa-1587 {
+    #eligibility, #about {
         background-color: var(--altBackground);
 
 
     }
 
-    #RPsbsa-1587 {
+    #about {
         .cs-item-text {
             font-size: calc( 1rem);
         }
@@ -954,7 +954,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #RPsbsr-1587, #RPsbsa-1587 {
+    #RPsbsr-1587, #about {
         .cs-picture {
             order: 2;
         }
@@ -962,7 +962,7 @@
 }
 
 @media only screen and (min-width: 48rem) {
-    #RPsbsa-1587 {
+    #about {
         .cs-item {
             grid-column: span 12;
         }
@@ -975,7 +975,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #why-choose-289 {
+    #features {
         text-align: center;
         padding: var(--sectionPadding);
 
@@ -1074,7 +1074,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #why-choose-289 {
+    #features {
         .cs-container {
             max-width: calc(1280 / 16 * 1rem);
         }
