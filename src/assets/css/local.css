@@ -401,41 +401,41 @@
   }
 }
 /*-- -------------------------- -->
-<---          Reviews           -->
+<---          testimonials           -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #reviews {
+  #testimonials {
     padding: var(--sectionPadding);
     /* Centers the button */
     text-align: center;
     background-color: var(--altBackground);
   }
-  #reviews .cs-container {
+  #testimonials .cs-container {
     margin: auto;
     max-width: 69rem;
     width: 100%;
   }
-  #reviews .cs-topper {
+  #testimonials .cs-topper {
     margin-bottom: 1rem;
     text-align: center;
   }
-  #reviews .cs-title {
+  #testimonials .cs-title {
     max-width: 437.5rem;
     text-align: center;
   }
-  #reviews .cs-text {
+  #testimonials .cs-text {
     /* 88px - 104px */
     margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
     max-width: 406.25rem;
     text-align: center;
   }
-  #reviews .cs-card-group {
+  #testimonials .cs-card-group {
     /* 48px - 64px */
     margin: 0 auto clamp(3rem, 5vw, 4rem);
     padding: 0;
   }
-  #reviews .cs-item {
+  #testimonials .cs-item {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -456,16 +456,16 @@
     text-align: left;
     box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
   }
-  #reviews .cs-item:last-of-type {
+  #testimonials .cs-item:last-of-type {
     margin-bottom: 0;
   }
-  #reviews .cs-item-img {
+  #testimonials .cs-item-img {
     position: absolute;
     top: -2.5rem;
     height: 5rem;
     width: 5rem;
   }
-  #reviews .cs-item-p {
+  #testimonials .cs-item-p {
     border-bottom: 1px solid #e8e9ec;
     margin: 0 0 1.25rem;
     padding-bottom: 1.25rem;
@@ -473,7 +473,7 @@
     line-height: 1.5em;
     color: var(--bodyTextColor);
   }
-  #reviews .cs-reviewer {
+  #testimonials .cs-reviewer {
     display: block;
     margin: 0 auto 0 0;
     width: 40%;
@@ -482,42 +482,42 @@
     font-weight: 700;
     color: var(--headerColor);
   }
-  #reviews .cs-desc {
+  #testimonials .cs-desc {
     display: block;
     font-size: 0.875rem;
     font-weight: 400;
     color: var(#353535);
   }
-  #reviews .cs-item-stars {
+  #testimonials .cs-item-stars {
     height: 1rem;
     width: 6rem;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #reviews .cs-card-group {
+  #testimonials .cs-card-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
   }
-  #reviews .cs-item {
+  #testimonials .cs-item {
     /* reset margin so it won't interfere with flexbox */
     margin: 0;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #reviews .cs-title,
-  body.dark-mode #reviews .cs-text,
-  body.dark-mode #reviews .cs-item-p,
-  body.dark-mode #reviews .cs-reviewer {
+  body.dark-mode #testimonials .cs-title,
+  body.dark-mode #testimonials .cs-text,
+  body.dark-mode #testimonials .cs-item-p,
+  body.dark-mode #testimonials .cs-reviewer {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #reviews .cs-item {
+  body.dark-mode #testimonials .cs-item {
     background: var(--medium);
   }
-  body.dark-mode #reviews .cs-desc {
+  body.dark-mode #testimonials .cs-desc {
     color: var(--primaryLight);
   }
 }
@@ -526,12 +526,12 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #RPsbs-1587, #RPsbsr-1587, #RPsbsa-1587 {
+  #eligibility, #RPsbsr-1587, #about {
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
   }
-  #RPsbs-1587 .cs-container, #RPsbsr-1587 .cs-container, #RPsbsa-1587 .cs-container {
+  #eligibility .cs-container, #RPsbsr-1587 .cs-container, #about .cs-container {
     width: 100%;
     /* changes to 1280px at tablet */
     max-width: 36.5rem;
@@ -542,13 +542,13 @@
     /* 48px - 64px */
     gap: clamp(2.5rem, 6vw, 4rem);
   }
-  #RPsbs-1587 .cs-picture, #RPsbsr-1587 .cs-picture, #RPsbsa-1587 .cs-picture {
+  #eligibility .cs-picture, #RPsbsr-1587 .cs-picture, #about .cs-picture {
     width: 100%;
     height: clamp(25rem, 80vw, 47rem);
     display: block;
     position: relative;
   }
-  #RPsbs-1587 .cs-picture img, #RPsbsr-1587 .cs-picture img, #RPsbsa-1587 .cs-picture img {
+  #eligibility .cs-picture img, #RPsbsr-1587 .cs-picture img, #about .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -556,7 +556,7 @@
     width: 100%;
     object-fit: contain;
   }
-  #RPsbs-1587 .cs-content, #RPsbsr-1587 .cs-content, #RPsbsa-1587 .cs-content {
+  #eligibility .cs-content, #RPsbsr-1587 .cs-content, #about .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -567,12 +567,12 @@
     align-items: flex-start;
     justify-content: center;
   }
-  #RPsbs-1587 .cs-title, #RPsbsr-1587 .cs-title, #RPsbsa-1587 .cs-title {
+  #eligibility .cs-title, #RPsbsr-1587 .cs-title, #about .cs-title {
     /* 26 characters wide including spaces */
     max-width: 26ch;
     margin: 0;
   }
-  #RPsbs-1587 .cs-card-group, #RPsbsr-1587 .cs-card-group, #RPsbsa-1587 .cs-card-group {
+  #eligibility .cs-card-group, #RPsbsr-1587 .cs-card-group, #about .cs-card-group {
     width: 100%;
     /* 550px - 630px */
     max-width: clamp(34.375rem, 50vw, 39.375rem);
@@ -583,7 +583,7 @@
     align-items: center;
     gap: clamp(1rem, 4vw, 2.5rem);
   }
-  #RPsbs-1587 .cs-item, #RPsbsr-1587 .cs-item, #RPsbsa-1587 .cs-item {
+  #eligibility .cs-item, #RPsbsr-1587 .cs-item, #about .cs-item {
     list-style: none;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -592,14 +592,14 @@
     align-items: flex-start;
     gap: 0.75rem;
   }
-  #RPsbs-1587 .wrapper, #RPsbsr-1587 .wrapper, #RPsbsa-1587 .wrapper {
+  #eligibility .wrapper, #RPsbsr-1587 .wrapper, #about .wrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 0.625rem;
   }
-  #RPsbs-1587 .cs-item-number, #RPsbsr-1587 .cs-item-number, #RPsbsa-1587 .cs-item-number {
+  #eligibility .cs-item-number, #RPsbsr-1587 .cs-item-number, #about .cs-item-number {
     font-size: 1.25rem;
     line-height: 1.2em;
     font-weight: 700;
@@ -610,7 +610,7 @@
     align-items: center;
     gap: 0.5rem;
   }
-  #RPsbs-1587 .cs-h3, #RPsbsr-1587 .cs-h3, #RPsbsa-1587 .cs-h3 {
+  #eligibility .cs-h3, #RPsbsr-1587 .cs-h3, #about .cs-h3 {
     font-size: 1.25rem;
     line-height: 1.2em;
     font-weight: 700;
@@ -621,38 +621,38 @@
     align-items: center;
     gap: 0.5rem;
   }
-  #RPsbs-1587 .cs-item-text, #RPsbsr-1587 .cs-item-text, #RPsbsa-1587 .cs-item-text {
+  #eligibility .cs-item-text, #RPsbsr-1587 .cs-item-text, #about .cs-item-text {
     font-size: 0.875rem;
     line-height: 1.5em;
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #RPsbs-1587 .cs-button-solid, #RPsbsr-1587 .cs-button-solid, #RPsbsa-1587 .cs-button-solid {
+  #eligibility .cs-button-solid, #RPsbsr-1587 .cs-button-solid, #about .cs-button-solid {
     margin-top: 2rem;
   }
-  #RPsbs-1587 .cs-text, #RPsbsr-1587 .cs-text, #RPsbsa-1587 .cs-text {
+  #eligibility .cs-text, #RPsbsr-1587 .cs-text, #about .cs-text {
     margin-bottom: 1rem;
     max-width: 46.875rem;
     text-align: left;
   }
-  #RPsbs-1587 .cs-text:last-of-type, #RPsbsr-1587 .cs-text:last-of-type, #RPsbsa-1587 .cs-text:last-of-type {
+  #eligibility .cs-text:last-of-type, #RPsbsr-1587 .cs-text:last-of-type, #about .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #RPsbs-1587 .cs-flex-group, #RPsbsr-1587 .cs-flex-group, #RPsbsa-1587 .cs-flex-group {
+  #eligibility .cs-flex-group, #RPsbsr-1587 .cs-flex-group, #about .cs-flex-group {
     position: relative;
     border-radius: 1rem;
     background-color: #f7f7f7;
     /* 16px - 32px */
     padding: clamp(1rem, 3vw, 2rem);
   }
-  #RPsbs-1587 .cs-flex-p, #RPsbsr-1587 .cs-flex-p, #RPsbsa-1587 .cs-flex-p {
+  #eligibility .cs-flex-p, #RPsbsr-1587 .cs-flex-p, #about .cs-flex-p {
     margin: 0 0 1rem;
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     color: #353535;
   }
-  #RPsbs-1587 .cs-name, #RPsbsr-1587 .cs-name, #RPsbsa-1587 .cs-name {
+  #eligibility .cs-name, #RPsbsr-1587 .cs-name, #about .cs-name {
     display: block;
     margin: 0 0 0.25rem;
     text-transform: uppercase;
@@ -661,13 +661,13 @@
     font-weight: bold;
     color: var(--headerColor);
   }
-  #RPsbs-1587 .cs-job, #RPsbsr-1587 .cs-job, #RPsbsa-1587 .cs-job {
+  #eligibility .cs-job, #RPsbsr-1587 .cs-job, #about .cs-job {
     display: block;
     font-size: 0.875rem;
     line-height: 1.5em;
     color: #353535;
   }
-  #RPsbs-1587 .cs-quote-icon, #RPsbsr-1587 .cs-quote-icon, #RPsbsa-1587 .cs-quote-icon {
+  #eligibility .cs-quote-icon, #RPsbsr-1587 .cs-quote-icon, #about .cs-quote-icon {
     position: absolute;
     bottom: 0rem;
     /* 16px - 32px */
@@ -679,32 +679,32 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #RPsbs-1587 .cs-container, #RPsbsr-1587 .cs-container, #RPsbsa-1587 .cs-container {
+  #eligibility .cs-container, #RPsbsr-1587 .cs-container, #about .cs-container {
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
   }
-  #RPsbs-1587 .cs-content, #RPsbsr-1587 .cs-content, #RPsbsa-1587 .cs-content {
+  #eligibility .cs-content, #RPsbsr-1587 .cs-content, #about .cs-content {
     width: 50%;
     max-width: 39.375rem;
     /* prevents flexbox from squishing it */
     flex: none;
   }
-  #RPsbs-1587 .cs-card-group, #RPsbsr-1587 .cs-card-group, #RPsbsa-1587 .cs-card-group {
+  #eligibility .cs-card-group, #RPsbsr-1587 .cs-card-group, #about .cs-card-group {
     grid-template-columns: repeat(12, 1fr);
   }
-  #RPsbs-1587 .cs-item, #RPsbsr-1587 .cs-item, #RPsbsa-1587 .cs-item {
+  #eligibility .cs-item, #RPsbsr-1587 .cs-item, #about .cs-item {
     grid-column: span 6;
   }
-  #RPsbs-1587 .cs-picture, #RPsbsr-1587 .cs-picture, #RPsbsa-1587 .cs-picture {
+  #eligibility .cs-picture, #RPsbsr-1587 .cs-picture, #about .cs-picture {
     height: auto;
     min-height: 32.8125rem;
   }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #RPsbs-1587 .cs-content, #RPsbsr-1587 .cs-content, #RPsbsa-1587 .cs-content {
+  #eligibility .cs-content, #RPsbsr-1587 .cs-content, #about .cs-content {
     padding: 5.25rem 0;
     align-self: center;
   }
@@ -714,21 +714,21 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #RPsbs-1587, #RPsbsa-1587 {
+  #eligibility, #about {
     background-color: var(--altBackground);
   }
-  #RPsbsa-1587 .cs-item-text {
+  #about .cs-item-text {
     font-size: 1rem;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #RPsbsr-1587 .cs-picture, #RPsbsa-1587 .cs-picture {
+  #RPsbsr-1587 .cs-picture, #about .cs-picture {
     order: 2;
   }
 }
 @media only screen and (min-width: 48rem) {
-  #RPsbsa-1587 .cs-item {
+  #about .cs-item {
     grid-column: span 12;
   }
 }
@@ -737,11 +737,11 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #why-choose-289 {
+  #features {
     text-align: center;
     padding: var(--sectionPadding);
   }
-  #why-choose-289 .cs-container {
+  #features .cs-container {
     width: 100%;
     /* changes to 1280px on tablet */
     max-width: 34.375rem;
@@ -752,7 +752,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #why-choose-289 .cs-content {
+  #features .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -761,10 +761,10 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #why-choose-289 .cs-text {
+  #features .cs-text {
     max-width: 32.625rem;
   }
-  #why-choose-289 .cs-card-group {
+  #features .cs-card-group {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -774,7 +774,7 @@
     flex-direction: column;
     gap: 1rem;
   }
-  #why-choose-289 .cs-item {
+  #features .cs-item {
     list-style: none;
     text-align: left;
     width: 100%;
@@ -785,27 +785,27 @@
     box-sizing: border-box;
     transition: background-color 0.3s;
   }
-  #why-choose-289 .cs-item:hover {
+  #features .cs-item:hover {
     background-color: var(--primary);
     cursor: pointer;
   }
-  #why-choose-289 .cs-item:hover .cs-icon {
+  #features .cs-item:hover .cs-icon {
     filter: grayscale(1) brightness(200%);
   }
-  #why-choose-289 .cs-item:hover .cs-h3 {
+  #features .cs-item:hover .cs-h3 {
     color: var(--bodyTextColorWhite);
   }
-  #why-choose-289 .cs-item:hover .cs-item-text {
+  #features .cs-item:hover .cs-item-text {
     color: var(--bodyTextColorWhite);
   }
-  #why-choose-289 .cs-icon {
+  #features .cs-icon {
     width: auto;
     height: 3rem;
     margin-bottom: 1.5rem;
     display: block;
     transition: filter 0.3s;
   }
-  #why-choose-289 .cs-h3 {
+  #features .cs-h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
     line-height: 1.2em;
@@ -814,7 +814,7 @@
     color: var(--headerColor);
     transition: color 0.3s;
   }
-  #why-choose-289 .cs-item-text {
+  #features .cs-item-text {
     font-size: 1rem;
     line-height: 1.5em;
     margin: 0;
@@ -824,22 +824,22 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #why-choose-289 .cs-container {
+  #features .cs-container {
     max-width: 80rem;
   }
-  #why-choose-289 .cs-content {
+  #features .cs-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     gap: 4rem;
   }
-  #why-choose-289 .cs-flex {
+  #features .cs-flex {
     width: 50%;
   }
-  #why-choose-289 .cs-title {
+  #features .cs-title {
     margin: 0;
   }
-  #why-choose-289 .cs-card-group {
+  #features .cs-card-group {
     justify-content: space-between;
     /* makes sure every box "stretches" to be the same height as the tallest box */
     align-items: stretch;
@@ -847,7 +847,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 1.5vw, 1.25rem);
   }
-  #why-choose-289 .cs-item {
+  #features .cs-item {
     width: auto;
     /* 16px - 32px */
     padding: 2rem clamp(1rem, 2.1vw, 2rem);
