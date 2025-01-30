@@ -148,6 +148,14 @@ document.addEventListener("keydown", (event) => {
         }
     });
 
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+
 
     // mobile nav toggle code
     // const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
