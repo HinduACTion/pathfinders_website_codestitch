@@ -1,6 +1,6 @@
 module.exports = {
     name: "HinduACTion",
-    email: "hinduaction@gmail.com",
+    email: "pathfinders.hinduaction@gmail.com",
     phoneForTel: "202-838-6655",
     phoneFormatted: "(202) 838-6655",
     address: {
