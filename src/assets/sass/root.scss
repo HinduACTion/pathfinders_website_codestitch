@@ -2586,6 +2586,29 @@ body {
             align-items: center;
         }
 
+        .testimonial-group {
+            width: 100%;
+            padding-top: calc(48 / 16 * 1rem);
+            border-top: 1px solid rgba(31, 41, 55, 0.14);
+        }
+
+        .testimonial-group:first-of-type {
+            padding-top: 0;
+            border-top: 0;
+        }
+
+        .testimonial-group .cs-content {
+            align-items: center;
+            text-align: center;
+        }
+
+        .testimonial-group .cs-title {
+            margin-bottom: calc(28 / 16 * 1rem);
+            font-size: clamp(1.5rem, 3vw, 2.25rem);
+            line-height: 1.15em;
+            text-align: center;
+        }
+
         .cs-card-group {
             width: 100%;
             margin: 0;
@@ -2597,12 +2620,23 @@ body {
             gap: calc(20 / 16 * 1rem);
         }
 
+        .testimonial-group .cs-card-group {
+            margin-bottom: 0;
+        }
+
         .cs-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(31, 41, 55, 0.1);
+            border-radius: calc(8 / 16 * 1rem);
+            background: #fff;
+            box-shadow: 0 0.75rem 2rem rgba(31, 41, 55, 0.06);
             list-style: none;
             width: 100%;
             max-width: calc(413 / 16 * 1rem);
             margin: 0;
-            padding: 0;
+            padding: calc(28 / 16 * 1rem) calc(24 / 16 * 1rem) calc(30 / 16 * 1rem);
         }
 
         .cs-img {
@@ -2611,6 +2645,23 @@ body {
             margin: 0 auto calc(16 / 16 * 1rem);
             border-radius: 50%;
             display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .cs-img--nishtha {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .cs-img--nishtha img {
+            position: relative;
+            top: calc(6 / 16 * 1rem);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 43%;
+            transform: scale(4);
         }
 
         .cs-name {
@@ -2635,10 +2686,37 @@ body {
         .cs-item-text {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 2vw, 1rem);
-            text-align: center;
+            text-align: left;
             line-height: 1.5em;
-            margin: auto;
+            margin: 0 auto;
             color: var(--bodyTextColor);
+        }
+
+        .cs-item-text::before {
+            content: "\201C";
+            display: block;
+            margin-bottom: calc(4 / 16 * 1rem);
+            color: var(--primary);
+            font-size: calc(42 / 16 * 1rem);
+            font-weight: 700;
+            line-height: 0.7;
+        }
+
+        .cs-item-text p {
+            margin: 0 0 calc(16 / 16 * 1rem);
+        }
+
+        .cs-item-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .cs-item--parent {
+            width: 100%;
+            max-width: calc(700 / 16 * 1rem);
+        }
+
+        .cs-item--parent .cs-name {
+            margin-top: calc(8 / 16 * 1rem);
         }
 
         .cs-button-solid {
@@ -2697,6 +2775,10 @@ body {
         .cs-item {
             /* we do this so it's stackable. You can add new any number of reviews you want and they will stack and center in the middle. We dont use grid because if you have an odd number of reviews, they don't stay centered.  They align with their grid lines. If you want 4 reviews in a row, lower the width under 23% to get the desired sizes fit 4 in a row and then stack when you add more*/
             width: clamp(31.5%, 30vw, 32.3%);
+        }
+
+        .cs-item--parent {
+            width: 100%;
         }
     }
 }

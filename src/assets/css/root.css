@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
 /*-- -------------------------- -->
 <---        Core Styles         -->
@@ -1405,6 +1406,25 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
+  #reviews-62 .testimonial-group {
+    width: 100%;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(31, 41, 55, 0.14);
+  }
+  #reviews-62 .testimonial-group:first-of-type {
+    padding-top: 0;
+    border-top: 0;
+  }
+  #reviews-62 .testimonial-group .cs-content {
+    align-items: center;
+    text-align: center;
+  }
+  #reviews-62 .testimonial-group .cs-title {
+    margin-bottom: 1.75rem;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    line-height: 1.15em;
+    text-align: center;
+  }
   #reviews-62 .cs-card-group {
     width: 100%;
     margin: 0;
@@ -1415,12 +1435,22 @@
     flex-direction: column;
     gap: 1.25rem;
   }
+  #reviews-62 .testimonial-group .cs-card-group {
+    margin-bottom: 0;
+  }
   #reviews-62 .cs-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(31, 41, 55, 0.1);
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0 0.75rem 2rem rgba(31, 41, 55, 0.06);
     list-style: none;
     width: 100%;
     max-width: 25.8125rem;
     margin: 0;
-    padding: 0;
+    padding: 1.75rem 1.5rem 1.875rem;
   }
   #reviews-62 .cs-img {
     width: 4.25rem;
@@ -1428,6 +1458,21 @@
     margin: 0 auto 1rem;
     border-radius: 50%;
     display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+  #reviews-62 .cs-img--nishtha {
+    overflow: hidden;
+    position: relative;
+  }
+  #reviews-62 .cs-img--nishtha img {
+    position: relative;
+    top: 0.375rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 43%;
+    transform: scale(4);
   }
   #reviews-62 .cs-name {
     font-size: 1.25rem;
@@ -1449,10 +1494,32 @@
   #reviews-62 .cs-item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 2vw, 1rem);
-    text-align: center;
+    text-align: left;
     line-height: 1.5em;
-    margin: auto;
+    margin: 0 auto;
     color: var(--bodyTextColor);
+  }
+  #reviews-62 .cs-item-text::before {
+    content: "“";
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--primary);
+    font-size: 2.625rem;
+    font-weight: 700;
+    line-height: 0.7;
+  }
+  #reviews-62 .cs-item-text p {
+    margin: 0 0 1rem;
+  }
+  #reviews-62 .cs-item-text p:last-child {
+    margin-bottom: 0;
+  }
+  #reviews-62 .cs-item--parent {
+    width: 100%;
+    max-width: 43.75rem;
+  }
+  #reviews-62 .cs-item--parent .cs-name {
+    margin-top: 0.5rem;
   }
   #reviews-62 .cs-button-solid {
     font-size: 1rem;
@@ -1502,6 +1569,9 @@
   #reviews-62 .cs-item {
     /* we do this so it's stackable. You can add new any number of reviews you want and they will stack and center in the middle. We dont use grid because if you have an odd number of reviews, they don't stay centered.  They align with their grid lines. If you want 4 reviews in a row, lower the width under 23% to get the desired sizes fit 4 in a row and then stack when you add more*/
     width: clamp(31.5%, 30vw, 32.3%);
+  }
+  #reviews-62 .cs-item--parent {
+    width: 100%;
   }
 }
 
